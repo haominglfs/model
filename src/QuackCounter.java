@@ -16,5 +16,15 @@ public class QuackCounter implements Quackable {
 	public static int getQuacks(){
 		return numberOfQuacks;
 	}
+	@Override
+	public void registerObserver(Observer observer) {
+		// TODO 自动生成的方法存根
+		
+	}
+	@Override
+	public void notifyObservers() {
+		// TODO 自动生成的方法存根
+		
+	}
 
 }

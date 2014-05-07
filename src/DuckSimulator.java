@@ -30,15 +30,18 @@ public class DuckSimulator {
 		
 		Flock flockOfMallards=new Flock();
 		
-		Quackable mallardOne=duckFactory.createMallardDuck();
-		Quackable mallardTwo=duckFactory.createMallardDuck();
-		Quackable mallardThree=duckFactory.createMallardDuck();
+		Quackologist quackologist=new Quackologist();
+		flockOfDucks.registerObserver(quackologist);
 		
-		flockOfMallards.add(mallardOne);
-		flockOfMallards.add(mallardTwo);
-		flockOfMallards.add(mallardThree);
-		
-		flockOfDucks.add(flockOfMallards);
+//		Quackable mallardOne=duckFactory.createMallardDuck();
+//		Quackable mallardTwo=duckFactory.createMallardDuck();
+//		Quackable mallardThree=duckFactory.createMallardDuck();
+//		
+//		flockOfMallards.add(mallardOne);
+//		flockOfMallards.add(mallardTwo);
+//		flockOfMallards.add(mallardThree);
+//		
+//		flockOfDucks.add(flockOfMallards);
 		
 		simulate(flockOfDucks);
 //		simulate(redheadDuck);
